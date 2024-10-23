@@ -17,7 +17,11 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // ------------------------------<br />
 // ------------------------------[LIST ART]
 // ------------------------------[LIST WRITING]
-// ------------------------------[]
+// ------------------------------<br />
+// ------------------------------[PROFILE]
+// ------------------------------[PREFERENCES]
+// ------------------------------[SIGN OUT]
+
 // IF you are not logged in, GUEST mode applies
     // User button is replaced w/ "Sign In" button
     // Sidebar cannot expand as User button is required for sidebar activation
