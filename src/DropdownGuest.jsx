@@ -47,16 +47,17 @@ const DropdownGuest = () => {
                 {/* Register */}
                 <form>
                     {/* Name input */}
-                    <label for="fname">Username:</label><br />
-                    <input type="text" id="fname" name="fname" /><br />
+                    <label for="inputName" className="col-sm-2 col-form-label">Username</label><br />
+                    <input type="text" className="form-control" id="inputName" name="inputName" /><br />
                     {/* Password input */}
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label><br />
-                    <input type="password" class="form-control" id="inputPassword" /><br />
+                    <label for="inputPassword" className="col-sm-2 col-form-label">Password</label><br />
+                    <input type="password" className="form-control" id="inputPassword" /><br />
                     {/* Email button */}
                     <button className="btn btn-primary">Continue with Email</button>
                 </form>
+                <br />
                 {/* Sign in */}
-                Already registered?
+                <span style={{marginRight: "16px"}}>Already registered?</span>
                 <button className="btn btn-outline-primary">Sign In</button>
             </div>
             </div>
