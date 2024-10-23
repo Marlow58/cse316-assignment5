@@ -2,6 +2,7 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import userIcon from './assets/react.svg';
 
 // Dropdown will be available starting "MEDIUM" screen size (as stated in Bootstrap)
 // MENU------[SIGN IN][REGISTER]-[USER BUTTON]
@@ -11,6 +12,8 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 // ------------------------------if you are registered
 // ------------------------------[Sign in!]
 // ------------------------------USERMODE BUTTONS
+// ------------------------------[USER HOME]
+// ------------------------------<br />
 // ------------------------------[USER NEWS]
 // ------------------------------[LIST CHARACTER]
 // ------------------------------[LIST UNIVERSE] <- May need to study about relationship between universe and character once frontend finishes
@@ -47,25 +50,29 @@ const Dropdown = () => {
 
             <div className="offcanvas-body">
                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    {/* Your user icon and name */}
+                    <li className="nav-item">
+                        <img src={userIcon} style={{width: "48px", height: "48px", marginRight: "16px"}}></img>
+                        <a classname="nav-link active" aria-current="page" href="#">Marlow58</a>
+                    </li>
+                    <hr />
                     {/* List the bulletins/characters/universes */}
                     <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">List Bulletins</a>
-                        <a className="nav-link active" aria-current="page" href="#">List Characters</a>
-                        <a className="nav-link active" aria-current="page" href="#">List Universes</a>
+                        <a className="nav-link" aria-current="page" href="#">Your Bulletins</a>
+                        <a className="nav-link" aria-current="page" href="#">Your Characters</a>
+                        {/* This page will not only list the universes you made, but all universes you are currently in */}
+                        {/* They will be divided later on */}
+                        <a className="nav-link" aria-current="page" href="#">Your Universes</a>
                     </li>
-                    <li>
-                        <hr className="dropdown-divider" />
-                    </li>
+                    <hr />
                     {/* List drawings and writings irrespective of universe */}
                     <li className="nav-item">
-                        <a className="nav-link" href="#">List Drawings</a>
-                        <a className="nav-link" href="#">List Writings</a>
+                        <a className="nav-link" href="#">Your Drawings</a>
+                        <a className="nav-link" href="#">Your Writings</a>
                     </li>
-                    <li>
-                        <hr className="dropdown-divider" />
-                    </li>
+                    <hr />
                     {/* Other actions with your profile */}
-                    <li className="dropdown-menu dropdown-menu-dark">
+                    <li className="nav-item">
                         {/* Chose to do 3 for the sake of rule of 3 */}
                         <a className="dropdown-item" href="#">Settings</a>
                         <a className="dropdown-item" href="#">Profile</a>
