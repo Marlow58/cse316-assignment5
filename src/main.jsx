@@ -10,7 +10,13 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Dropdown />
     {/* <DropdownGuest /> */}
-    <DropdownOwner />
-    <Index Index="false" />
+    {/* Unfortunately, we cannot put Index as a child of DropdownOwner */}
+    {/* Nor can I do without the two div's */}
+    <div className="container-fluid">
+      <div className="row flex-nowrap">
+        <DropdownOwner />
+        <Index Index="false" />
+      </div>
+    </div>
   </StrictMode>,
 )

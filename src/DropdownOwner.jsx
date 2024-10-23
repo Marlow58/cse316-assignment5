@@ -28,41 +28,41 @@ const DropdownOwner = () => {
   const userName = "Producer.P"
 //   const userIcon = "./assets/ikgefu-1024x1024.jpg"
     return (
-  <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style={{width: "280px", height: "100vh"}}>
-    <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg className="bi pe-none me-2" width="40" height="32"><use xlinkHref="#bootstrap"/></svg>
-        <span className="fs-4">User</span>
-    </a>
-    <hr />
-    <ul className="nav nav-pills flex-column mb-auto">
-        <li className="nav-item">
-            <img src={userIcon} style={{width: "48px", height: "48px", marginRight: "16px"}}></img>
-            <a aria-current="page" href="#">{userName}</a>
-        </li>
+    <div className="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style={{width: "280px", height: "100vh"}}>
+        <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg className="bi pe-none me-2" width="40" height="32"><use xlinkHref="#bootstrap"/></svg>
+            <span className="fs-4">User</span>
+        </a>
         <hr />
-        {/* List the bulletins/characters/universes */}
-        {/* The userName should be the person you are viewing */}
-        {/*  */}
-        <li className="nav-item">
-            <a className="nav-link" aria-current="page" href="#">{userName}'s Bulletins</a>
-            <a className="nav-link" aria-current="page" href="#">{userName}'s Characters</a>
-            {/* This page will not only list the universes you made, but all universes you are currently in */}
-            {/* They will be divided later on */}
-            <a className="nav-link" aria-current="page" href="#">{userName}'s Universes</a>
-        </li>
-        <hr />
-        {/* List drawings and writings irrespective of universe */}
-        <li className="nav-item">
-            <a className="nav-link" href="#">{userName}'s Drawings</a>
-            <a className="nav-link" href="#">{userName}'s Writings</a>
-        </li>
-        <hr />
-        {/* Other actions with your profile */}
-        <li className="nav-item">
-            {/* When viewing other users, only Profile remains, the other 2 options are disabled */}
-            <a className="dropdown-item" href="#">{userName}'s Profile</a>
-        </li>
-    </ul>
+        <ul className="nav nav-pills flex-column mb-auto">
+            <li className="nav-item">
+                <img src={userIcon} style={{width: "48px", height: "48px", marginRight: "16px"}}></img>
+                <a aria-current="page" href="#">{userName}</a>
+            </li>
+            <hr />
+            {/* List the bulletins/characters/universes */}
+            {/* The userName should be the person you are viewing */}
+            {/*  */}
+            <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="#">{userName}'s Bulletins</a>
+                <a className="nav-link" aria-current="page" href="#">{userName}'s Characters</a>
+                {/* This page will not only list the universes you made, but all universes you are currently in */}
+                {/* They will be divided later on */}
+                <a className="nav-link" aria-current="page" href="#">{userName}'s Universes</a>
+            </li>
+            <hr />
+            {/* List drawings and writings irrespective of universe */}
+            <li className="nav-item">
+                <a className="nav-link" href="#">{userName}'s Drawings</a>
+                <a className="nav-link" href="#">{userName}'s Writings</a>
+            </li>
+            <hr />
+            {/* Other actions with your profile */}
+            <li className="nav-item">
+                {/* When viewing other users, only Profile remains, the other 2 options are disabled */}
+                <a className="dropdown-item" href="#">{userName}'s Profile</a>
+            </li>
+        </ul>
     </div>
   )
 }

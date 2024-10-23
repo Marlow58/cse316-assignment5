@@ -15,7 +15,7 @@ const Index = (props) => {
   return (
     // CSS Grid would be most desirable
     // TODO Today: Fix the grid going under the 
-    <div className="grid-container" style={{display:"grid"}}>
+    <div className="grid-container" style={{display:"flex", flexWrap:"wrap", marginTop:"72px", flex:"1"}}>
     {assets.map((char) => (
         // This consists of a character frame
         <div className='grid-member' style={{display:"flex", flexDirection:"column", textAlign:"center"}}>
