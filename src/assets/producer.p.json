@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "랑이",
+        "owner": "Producer.P",
+        "img": "src/assets/1544251087604-1024x1024.png"
+    },
+    {
+        "id": 2,
+        "name": "FLUvirus",
+        "owner": "Producer.P",
+        "img": "src/assets/1544336214182-1024x1024.png"
+    },
+    {
+        "id": 3,
+        "name": "Naru Eun",
+        "owner": "Producer.P",
+        "img": "src/assets/kjursdgf-1024x1024.png"
+    },
+    {
+        "id": 4,
+        "name": "JiRy",
+        "owner": "Producer.P",
+        "img": "src/assets/jiry-guyo_simple-1024x1024.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Ariel",
+        "owner": "Producer.P",
+        "img": "src/assets/Ariel-eyesClosed-1024x1024.png"
+    },
+    {
+        "id": 6,
+        "name": "Hoppo",
+        "owner": "Producer.P",
+        "img": "src/assets/segsrg-1024x1024.jpg"
+    }
+]
