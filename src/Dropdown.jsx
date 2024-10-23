@@ -42,7 +42,7 @@ const Dropdown = () => {
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div className="offcanvas offcanvas-end text-bg-dark" tabIndex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div className="offcanvas-header">
                 <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Your Profile</h5>
                 <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -53,7 +53,7 @@ const Dropdown = () => {
                     {/* Your user icon and name */}
                     <li className="nav-item">
                         <img src={userIcon} style={{width: "48px", height: "48px", marginRight: "16px"}}></img>
-                        <a classname="nav-link active" aria-current="page" href="#">Marlow58</a>
+                        <a aria-current="page" href="#">Marlow58</a>
                     </li>
                     <hr />
                     {/* List the bulletins/characters/universes */}

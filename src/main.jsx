@@ -1,10 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import DropdownGuest from './DropdownGuest.jsx'
+import Dropdown from './Dropdown.jsx'
+// import DropdownGuest from './DropdownGuest.jsx'
+import DropdownOwner from './DropdownOwner.jsx'
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <DropdownGuest />
+    <Dropdown />
+    {/* <DropdownGuest /> */}
+    <DropdownOwner />
   </StrictMode>,
 )
