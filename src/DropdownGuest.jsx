@@ -27,7 +27,7 @@ import React from 'react'
     // User sidebar can be activated by 
 // React states: How can I make sure the user is "logged in" or not?
 // Example from https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas
-const Dropdown = () => {
+const DropdownGuest = () => {
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
