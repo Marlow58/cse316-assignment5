@@ -2,37 +2,26 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import userIcon from './assets/react.svg';
 
-// Dropdown will be available starting "MEDIUM" screen size (as stated in Bootstrap)
-// MENU------[SIGN IN][REGISTER]-[USER BUTTON]
-// ------------------------------Click to Open
-// 
-// ------------------------------[Register!]
-// ------------------------------if you are registered
-// ------------------------------[Sign in!]
-// ------------------------------USERMODE BUTTONS
-// ------------------------------[USER HOME]
-// ------------------------------<br />
-// ------------------------------[USER NEWS]
-// ------------------------------[LIST CHARACTER]
-// ------------------------------[LIST UNIVERSE] <- May need to study about relationship between universe and character once frontend finishes
-// ------------------------------<br />
-// ------------------------------[LIST ART]
-// ------------------------------[LIST WRITING]
-// ------------------------------<br />
-// ------------------------------[PROFILE]
-// ------------------------------[PREFERENCES]
-// ------------------------------[SIGN OUT]
+// The design of this page will be
+// TOP DROPDOWN - For you
+// MIDDLE DROPDOWN - For others
+// The second dropdown is about accessing the user of a character, if you are visiting someone else's character.
+// Maybe the world version could be added, but only if this project has progressed to a sufficient point
+// USER VERSION
+// Type:USER <- Other types include WORLD and HELP. Username is given
+// [USER NEWS]
+// [LIST CHARACTER]
+// [LIST UNIVERSE] <- May need to study about relationship between universe and character once frontend finishes
+// <br />
+// [LIST ART]
+// [LIST WRITING]
+// No Profile/Preference/Sign Out features here
 
-// IF you are not logged in, GUEST mode applies
-    // User button is replaced w/ "Sign In" button
-    // Sidebar cannot expand as User button is required for sidebar activation
-// IF you are logged in, USER mode applies
-    // User sidebar can be activated by 
 // React states: How can I make sure the user is "logged in" or not?
 // Example from https://getbootstrap.com/docs/5.3/components/navbar/#offcanvas
-const Dropdown = () => {
+// This one would be brighter, also no dropdown but instead a left sidebar, named it just for consistency
+const DropdownOwner = () => {
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
@@ -50,29 +39,25 @@ const Dropdown = () => {
 
             <div className="offcanvas-body">
                 <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    {/* Your user icon and name */}
-                    <li className="nav-item">
-                        <img src={userIcon} style={{width: "48px", height: "48px", marginRight: "16px"}}></img>
-                        <a classname="nav-link active" aria-current="page" href="#">Marlow58</a>
-                    </li>
-                    <hr />
                     {/* List the bulletins/characters/universes */}
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Your Bulletins</a>
-                        <a className="nav-link" aria-current="page" href="#">Your Characters</a>
-                        {/* This page will not only list the universes you made, but all universes you are currently in */}
-                        {/* They will be divided later on */}
-                        <a className="nav-link" aria-current="page" href="#">Your Universes</a>
+                        <a className="nav-link active" aria-current="page" href="#">List Bulletins</a>
+                        <a className="nav-link active" aria-current="page" href="#">List Characters</a>
+                        <a className="nav-link active" aria-current="page" href="#">List Universes</a>
                     </li>
-                    <hr />
+                    <li>
+                        <hr className="dropdown-divider" />
+                    </li>
                     {/* List drawings and writings irrespective of universe */}
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Your Drawings</a>
-                        <a className="nav-link" href="#">Your Writings</a>
+                        <a className="nav-link" href="#">List Drawings</a>
+                        <a className="nav-link" href="#">List Writings</a>
                     </li>
-                    <hr />
+                    <li>
+                        <hr className="dropdown-divider" />
+                    </li>
                     {/* Other actions with your profile */}
-                    <li className="nav-item">
+                    <li className="dropdown-menu dropdown-menu-dark">
                         {/* Chose to do 3 for the sake of rule of 3 */}
                         <a className="dropdown-item" href="#">Settings</a>
                         <a className="dropdown-item" href="#">Profile</a>
@@ -92,4 +77,4 @@ const Dropdown = () => {
   )
 }
 
-export default Dropdown
+export default DropdownOwner
