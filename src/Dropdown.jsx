@@ -37,7 +37,7 @@ const Dropdown = () => {
     <nav className="navbar navbar-dark bg-dark fixed-top">
         <div className="container-fluid">
             {/* Project is unnamed so far, so I call it Assignment 5 for the mock-up */}
-            <a className="navbar-brand" href="#">Assignment 5</a>
+            <a className="navbar-brand" href="index.html">Assignment 5</a>
             {/* Should be replaced by the user icon at the end */}
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -76,7 +76,7 @@ const Dropdown = () => {
                         {/* Chose to do 3 for the sake of rule of 3 */}
                         <a className="dropdown-item" href="#">Settings</a>
                         <a className="dropdown-item" href="#">Profile</a>
-                        <a className="dropdown-item" href="#">Sign out</a>
+                        <a className="dropdown-item" href="guest.html">Sign out</a>
                     </li>
                 </ul>
                 {/* Not sure if I need a search button */}

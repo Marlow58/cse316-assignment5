@@ -64,12 +64,12 @@ const AddChar = (username) => {
       {/* List of Characters in a Universe is a list, not a singular value like Character would */}
       {/* For ease of access, one character is still associated with a single world, although you can make copies of your character if you want RPs from multiple worlds */}
       {/* But even then, it's better off creating new settings altogether */}
-      <label htmlFor="worldCharacter" className="col-sm-2 col-form-label">Associated Characters</label><br />
+      <label htmlFor="worldCharacter" className="col-sm-2 col-form-label">Associated Characters (Optional): </label><br />
       <input type="text" value={worldCharacter} id="worldCharacter" className="form-control" onChange={onChangeForm} /><br />
       
       {/* Optional items: Universe Description */}
       {/* A text description will do for now */}
-      <label htmlFor="characterStory">Character Story: </label>
+      <label htmlFor="characterStory">World Backstory (Optional): </label>
       {/* Beyond CSE316 - Import a WYSIWYG editor, and export this into a markdown or XHTML file */}
       {/* This (along with the rest of the text stuff) needs to be an tracked */}
       {/* Radio button and anything fancy is beyond the scope here */}
@@ -77,12 +77,8 @@ const AddChar = (username) => {
 
       {/* Maybe images for even characters or universes can be optional? */}
       {/* It is easy to add a placeholder value in React, though I'm pressed for time */}
-      <form onSubmit={addImageData}>
-        <label htmlFor="characterImg"></label>
-        <div className="input-group mb-3">
-          <input type="file" value={characterImg} id="characterImg" className="form-control"></input>
-        </div>
-      </form>
+      <label htmlFor="characterImg">Icon for World (Optional): </label><br />
+      <input type="file" value={characterImg} id="characterImg" className="form-control"></input>
       
       <input type="submit" value="Submit" className="btn btn-primary"></input>
     </form>

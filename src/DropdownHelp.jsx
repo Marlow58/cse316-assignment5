@@ -29,8 +29,7 @@ const DropdownHelp = () => {
     <hr />
     <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-            <img src={userIcon} style={{width: "48px", height: "48px", marginRight: "16px"}}></img>
-            <a aria-current="page" href="#">{userName}</a>
+            <a aria-current="page" href="#">Help Page</a>
         </li>
         <hr />
         {/* List the bulletins/characters/universes */}
