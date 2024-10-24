@@ -15,7 +15,7 @@ createRoot(document.getElementById('root')).render(
     <div className="container-fluid">
       <div className="row flex-nowrap">
         <DropdownOwner />
-        <Index Index="false" />
+        <Index Index={{username: "Producer.P"}} />
       </div>
     </div>
   </StrictMode>,
