@@ -37,30 +37,30 @@ const DropdownOwner = () => {
         <ul className="nav nav-pills flex-column mb-auto">
             <li className="nav-item">
                 <img src={userIcon} style={{width: "48px", height: "48px", marginRight: "16px"}}></img>
-                <a aria-current="page" href="#">{userName}</a>
+                <a aria-current="page" href="userhome.html">{userName}</a>
             </li>
             <hr />
             {/* List the bulletins/characters/universes */}
             {/* The userName should be the person you are viewing */}
             {/*  */}
             <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">{userName}'s Bulletins</a>
-                <a className="nav-link" aria-current="page" href="#">{userName}'s Characters</a>
+                <a className="nav-link" aria-current="page" href="bulletin.html">{userName}'s Bulletins</a>
+                <a className="nav-link" aria-current="page" href="character.html">{userName}'s Characters</a>
                 {/* This page will not only list the universes you made, but all universes you are currently in */}
                 {/* They will be divided later on */}
-                <a className="nav-link" aria-current="page" href="#">{userName}'s Universes</a>
+                <a className="nav-link" aria-current="page" href="universe.html">{userName}'s Universes</a>
             </li>
             <hr />
             {/* List drawings and writings irrespective of universe */}
             <li className="nav-item">
-                <a className="nav-link" href="#">{userName}'s Drawings</a>
-                <a className="nav-link" href="#">{userName}'s Writings</a>
+                <a className="nav-link" href="drawing.html">{userName}'s Drawings</a>
+                <a className="nav-link" href="writing.html">{userName}'s Writings</a>
             </li>
             <hr />
             {/* Other actions with your profile */}
             <li className="nav-item">
                 {/* When viewing other users, only Profile remains, the other 2 options are disabled */}
-                <a className="dropdown-item" href="#">{userName}'s Profile</a>
+                <a className="dropdown-item" href="profile.html">{userName}'s Profile</a>
             </li>
         </ul>
     </div>

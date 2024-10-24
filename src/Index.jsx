@@ -11,25 +11,23 @@ import assets from "./assets/producer.p.json"
 // Character owner is shown in index and world, but not in user
 const Index = (props) => {
   // Props cannot be used as 'switches' as they only accept K/V object pairs.
-  console.log(props);
+  console.log(props.Index);
   return (
-    // CSS Grid would be most desirable
-    // TODO Today: Fix the grid going under the 
     <div className="grid-container" style={{display:"flex", flexWrap:"wrap", marginTop:"72px", flex:"1"}}>
     {assets.map((char) => (
         // This consists of a character frame
         <div className='grid-member' style={{display:"flex", flexDirection:"column", textAlign:"center"}}>
             {/* Resize image to appropriate size */}
             <div>
-            <img src={char.img} style={{width: "500px"}} />
+            <img src={char.characterImg} style={{width: "500px"}} />
             </div>
             {/* Put character name behind it */}
             <div>
-            <button className="btn btn-primary">{char.name}</button>
+            <button className="btn btn-primary">{char.characterName}</button>
             {/* IF isOwner is false, show owner */}
             {/* {A ? B : C} - ternary, {A && B} - ternary, but no 'else if' */}
             <br></br>
-            {Object.values(props).includes("false") && <><i className="bi bi-person"></i><span>{char.owner}</span></>}
+            {Object.values(props).includes("false") && <><i className="bi bi-person"></i><span>{char.characterOwner}</span></>}
             </div>
         </div>
     ))}
