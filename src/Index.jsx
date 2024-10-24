@@ -33,6 +33,9 @@ const Index = (props) => {
             </div>
         </div>
     ))}
+    {/* IF isOwner is true, show button */}
+    {Object.values(props).includes("true") &&
+    <button className='btn btn-secondary'><a href='addchar.html'>Add Character</a></button> }
     </div>
   )
 }
